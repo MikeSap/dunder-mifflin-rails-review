@@ -1,0 +1,11 @@
+<h1><%=@emp.name%></h1><br>
+<%=image_tag(@emp.img_url)%>
+<br>
+<ul>
+<label for= "employee_alias"> Employee Title:</label>
+<li><%=@emp.alias%></li>
+<label for= "employee_title"> Employee Title:</label>
+<li><%=@emp.title%></li>
+<label for="employee_dog">Their Dog:</label>
+<li><%= Dog.find_by_id(@emp.dog_id).name%></li>
+</ul>

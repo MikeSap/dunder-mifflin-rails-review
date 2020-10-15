@@ -1,0 +1,13 @@
+<h1><%=@dog.name%></h1>
+<ul>
+<label for= "Dog Breed"> Dog Breed:</label>
+<li><%=@dog.breed%></li>
+<label for= "Dog Age"> Dog Age:</label>
+
+<li><%=@dog.age%></li>
+<label for="dog_owner">Owners:</label>
+
+<% @dog.owners.each do |owner|%>
+<li><%=owner.name%></li>
+<%end%>
+</ul>
